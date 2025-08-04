@@ -1,0 +1,179 @@
+/* Offer Card Styles */
+.offer-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.offer-card.active {
+  border-color: #10b981;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.1);
+}
+
+.offer-card.inactive {
+  border-color: #f59e0b;
+  opacity: 0.8;
+}
+
+.offer-card.expired {
+  border-color: #ef4444;
+  opacity: 0.6;
+}
+
+.offer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.offer-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.offer-code {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.offer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.toggle-btn:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.toggle-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toggle-btn.active {
+  color: #10b981;
+}
+
+.toggle-btn.inactive {
+  color: #f59e0b;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.offer-card-body {
+  padding: 20px;
+}
+
+.discount-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discount-value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.discount-text {
+  font-size: 24px;
+  font-weight: 800;
+  color: #92400e;
+}
+
+.offer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.status-indicator {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-indicator.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.status-indicator.inactive {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-indicator.expired {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .offer-card-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .offer-details {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .status-indicator {
+    text-align: center;
+  }
+}

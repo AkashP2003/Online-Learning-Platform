@@ -1,0 +1,79 @@
+/* Lesson Card Styles */
+.lesson-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.lesson-card:hover {
+  border-color: #d1d5db;
+  background-color: #f3f4f6;
+}
+
+.lesson-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.lesson-info {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.lesson-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.lesson-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.lesson-meta span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.video-id {
+  flex: 1;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.lesson-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-small.btn-purple {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.btn-small.btn-purple:hover {
+  background-color: #6d28d9;
+}
